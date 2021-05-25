@@ -99,16 +99,16 @@ class Maze(MiniWorldEnv):
         # Generate the maze starting from the top-left corner
         visit(0, 0)
 
-        self.box = self.place_entity(Box(color='red'))
+#         self.box = self.place_entity(Box(color='red'))
 
         self.place_agent()
 
     def step(self, action):
         obs, reward, done, info = super().step(action)
 
-        if self.near(self.box):
-            reward += self._reward()
-            done = True
+#         if self.near(self.box):
+#             reward += self._reward()
+#             done = True
 
         return obs, reward, done, info
 
