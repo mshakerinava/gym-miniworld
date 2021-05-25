@@ -1154,7 +1154,7 @@ class MiniWorldEnv(gym.Env):
 
         return self._render_world(
             frame_buffer,
-            render_agent=True
+            render_agent=False
         )
 
     def render_obs(self, frame_buffer=None):
