@@ -31,13 +31,6 @@ class OneRoom(MiniWorldEnv):
             max_z=self.size
         )
 
-        self.box = self.place_entity(Box(color='red'))
-        self.box = self.place_entity(Box(color='green'))
-        self.box = self.place_entity(Box(color='blue'))
-        self.box = self.place_entity(Box(color='purple'))
-        self.box = self.place_entity(Box(color='yellow'))
-        self.box = self.place_entity(Box(color='grey'))
-
         self.place_agent()
 
     def step(self, action):
